@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundation 5</title>
+
+<link rel="stylesheet" href="./bower_components/foundation/css/normalize.css">
+<link rel="stylesheet" href="./bower_components/foundation/css/foundation.css">
+
+<link rel="stylesheet" href="styles/app.css">
+
+<script src="./bower_components/foundation/js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+
+<main id="app" class="container">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Todo</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+<header>
+  <div>
+    <form id="form" autocomplete="off">
+      <p><input id="submit" placeholder="New Todo"></p>
+    </form>
+  </div>
+</header>
+<hr />
+<div id="list">
+</div>
+<div class="panel callout radius">
+  <h5>This is a callout panel.</h5>
+  <p>It's a little ostentatious, but useful for important content.</p>
+</div>
+</main>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./bower_components/foundation/js/foundation.min.js"></script>
+<script src="./build/app.js"></script>
+<script>
+$(document).foundation();
+</script>
+</body>
+</html>
